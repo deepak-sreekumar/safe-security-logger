@@ -1,13 +1,12 @@
 import logging
 import sys
+import time
+
+from pythonjsonlogger import jsonlogger
 
 __author__ = "deepak.s@safe.security"
 __copyright__ = "deepak.s@safe.security"
 __license__ = "MIT"
-
-import logging
-
-from pythonjsonlogger import jsonlogger
 
 
 def getLogger(name):
@@ -24,6 +23,8 @@ def getLogger(name):
             "name": "loggerName",
         },
     )
+    # Use UTC time
+    formatter.converter = time.gmtime
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
 

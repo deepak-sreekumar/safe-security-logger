@@ -12,6 +12,14 @@
         :target: https://pypi.org/project/safe-security-logger/
 
 |
+.. image:: https://img.shields.io/pypi/v/safe-security-logger.svg
+        :alt: PyPI-Server
+        :target: https://pypi.org/project/safe-security-logger/
+
+
+.. image:: https://api.cirrus-ci.com/github/deepak-sreekumar/safe-security-logger.svg?branch=main
+    :alt: Built Status
+    :target: https://cirrus-ci.com/github/deepak-sreekumar/safe-security-logger
 
 ====================
 safe-security-logger
@@ -43,5 +51,6 @@ Usage
 
     def test():
         logger.info("Hello world")
+        logger.info("Hello world", extra={"text": "testing logging"})
 
     test()
