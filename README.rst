@@ -11,10 +11,6 @@
         :alt: PyPI-Server
         :target: https://pypi.org/project/safe-security-logger/
 
-.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
-    :alt: Project generated with PyScaffold
-    :target: https://pyscaffold.org/
-
 |
 
 ====================
@@ -22,7 +18,7 @@ safe-security-logger
 ====================
 
 
-    Structured JSON logger package for Safe Security
+    Structured JSON logger package from Safe Security
 
 
 
