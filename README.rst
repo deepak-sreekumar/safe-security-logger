@@ -23,3 +23,29 @@ safe-security-logger
 
 
     Structured JSON logger package for Safe Security
+
+
+
+============
+Installation
+============
+
+::
+
+    pip install -i https://test.pypi.org/simple/ safe-security-logger
+
+
+============
+Installation
+============
+
+::
+
+    import safe_security_logger as logging
+
+    logger = logging.getLogger("awesome-logger")
+
+    def test():
+        logger.info("Hello world")
+
+    test()
