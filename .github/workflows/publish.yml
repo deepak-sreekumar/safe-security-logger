@@ -2,13 +2,11 @@
 # MODIFY IT ACCORDING TO YOUR NEEDS!
 # Reference: https://docs.github.com/en/actions
 
-name: tests
+name: publish
 
 on:
   push:
-    # Avoid using all the resources/limits available by checking only
-    # relevant branches and tags. Other branches can be checked via PRs.
-    branches: [main]
+    # Trigger only on a new tag
     tags: ["v[0-9]*", "[0-9]+.[0-9]+*"] # Match tags that resemble a version
   pull_request: # Run in every PR
   workflow_dispatch: # Allow manually triggering the workflow
@@ -83,3 +81,34 @@ jobs:
           github-token: ${{ secrets.github_token }}
           flag-name: ${{ matrix.platform }} - py${{ matrix.python }}
           parallel: true
+
+  finalize:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Finalize coverage report
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
+
+  publish:
+    needs: finalize
+    if: ${{ github.event_name == 'push' && contains(github.ref, 'refs/tags/') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with: { python-version: "3.10" }
+      - name: Retrieve pre-built distribution files
+        uses: actions/download-artifact@v3
+        with: { name: python-distribution-files, path: dist/ }
+      - name: Publish Package
+        env:
+          # TODO: Set your PYPI_TOKEN as a secret using GitHub UI
+          # - https://pypi.org/help/#apitoken
+          # - https://docs.github.com/en/actions/security-guides/encrypted-secrets
+          TWINE_REPOSITORY: testpypi
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: pipx run tox -e publish

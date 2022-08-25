@@ -1,25 +1,12 @@
-.. These are examples of badges you might want to add to your README:
-   please update the URLs accordingly
-
-    .. image:: https://api.cirrus-ci.com/github/<USER>/safe-security-logger.svg?branch=main
-        :alt: Built Status
-        :target: https://cirrus-ci.com/github/<USER>/safe-security-logger
-    .. image:: https://readthedocs.org/projects/safe-security-logger/badge/?version=latest
-        :alt: ReadTheDocs
-        :target: https://safe-security-logger.readthedocs.io/en/stable/
-    .. image:: https://img.shields.io/pypi/v/safe-security-logger.svg
-        :alt: PyPI-Server
-        :target: https://pypi.org/project/safe-security-logger/
-
 |
 .. image:: https://img.shields.io/pypi/v/safe-security-logger.svg
         :alt: PyPI-Server
         :target: https://pypi.org/project/safe-security-logger/
 
 
-.. image:: https://api.cirrus-ci.com/github/deepak-sreekumar/safe-security-logger.svg?branch=main
+.. image:: https://img.shields.io/github/workflow/status/deepak-sreekumar/safe-security-logger/publish
     :alt: Built Status
-    :target: https://cirrus-ci.com/github/deepak-sreekumar/safe-security-logger
+    :target: https://github.com/deepak-sreekumar/safe-security-logger/actions/workflows/publish.yml
 
 ====================
 safe-security-logger
