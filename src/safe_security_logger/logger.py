@@ -1,4 +1,3 @@
-import argparse
 import logging
 import sys
 
@@ -7,8 +6,6 @@ __copyright__ = "deepak.s@safe.security"
 __license__ = "MIT"
 
 import logging
-import os.path
-import traceback
 
 from pythonjsonlogger import jsonlogger
 

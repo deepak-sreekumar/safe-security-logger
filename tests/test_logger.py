@@ -1,5 +1,3 @@
-import pytest
-
 import safe_security_logger as logger
 
 __author__ = "deepak.s@safe.security"
