@@ -1,4 +1,3 @@
-|
 .. image:: https://img.shields.io/pypi/v/safe-security-logger.svg
         :alt: PyPI-Server
         :target: https://pypi.org/project/safe-security-logger/
@@ -8,6 +7,8 @@
     :alt: Built Status
     :target: https://github.com/deepak-sreekumar/safe-security-logger/actions/workflows/publish.yml
 
+
+|
 ====================
 safe-security-logger
 ====================
