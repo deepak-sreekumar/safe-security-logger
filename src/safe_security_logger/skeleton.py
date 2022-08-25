@@ -26,8 +26,8 @@ import sys
 
 from safe_security_logger import __version__
 
-__author__ = "deepak-sreekumar"
-__copyright__ = "deepak-sreekumar"
+__author__ = "deepak.s@safe.security"
+__copyright__ = "Safe Security"
 __license__ = "MIT"
 
 _logger = logging.getLogger(__name__)
