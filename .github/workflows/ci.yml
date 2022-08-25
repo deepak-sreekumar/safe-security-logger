@@ -95,6 +95,7 @@ jobs:
   #         parallel-finished: true
 
   publish:
+    needs: test
     if: ${{ github.event_name == 'push' && contains(github.ref, 'refs/tags/') }}
     runs-on: ubuntu-latest
     steps:
