@@ -1,3 +1,10 @@
+## v0.3.0 (2022-08-26)
+
+### Feat
+
+- **logger**: test git action
+- **logger**: test git action
+
 ## v0.2.0 (2022-08-26)
 
 ### Feat
