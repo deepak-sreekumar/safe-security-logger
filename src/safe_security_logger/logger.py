@@ -23,7 +23,7 @@ def getLogger(name):
             "name": "loggerName",
         },
     )
-    # Use UTC time
+    # Use UTC time for all logs
     formatter.converter = time.gmtime
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
