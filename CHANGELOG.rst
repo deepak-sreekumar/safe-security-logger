@@ -17,3 +17,4 @@ Version 0.1
 - Test release
 - Test feature1
 - Test fix1
+- Test release
