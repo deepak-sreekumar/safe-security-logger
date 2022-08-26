@@ -1,3 +1,11 @@
+## v0.2.0 (2022-08-26)
+
+### Feat
+
+- **logger**: test git action
+- **logger**: updated git action
+- **logger**: added commitizen
+
 ## v0.1.9 (2022-08-26)
 
 ### Fix
