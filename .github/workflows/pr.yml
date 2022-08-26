@@ -2,7 +2,7 @@
 # MODIFY IT ACCORDING TO YOUR NEEDS!
 # Reference: https://docs.github.com/en/actions
 
-name: tests
+name: pr-build
 
 on:
   push:
@@ -84,7 +84,7 @@ jobs:
           parallel: true
 
   bump-version:
-    needs: prepare
+    needs: test
     if: "startsWith(github.event.head_commit.message, 'bump:')"
     runs-on: ubuntu-latest
     name: "Bump version and create changelog with commitizen"
