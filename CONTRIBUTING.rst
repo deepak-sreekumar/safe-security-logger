@@ -274,8 +274,8 @@ on PyPI_, the following steps can be used to release a new version for
 .. |the repository service| replace:: GitHub
 .. |contribute button| replace:: "Create pull request"
 
-.. _repository: https://github.com/<USERNAME>/safe-security-logger
-.. _issue tracker: https://github.com/<USERNAME>/safe-security-logger/issues
+.. _repository: https://github.com/deepak-sreekumar/safe-security-logger
+.. _issue tracker: https://github.com/deepak-sreekumar/safe-security-logger/issues
 .. <-- end -->
 
 
