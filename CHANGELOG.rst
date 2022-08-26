@@ -9,3 +9,4 @@ Version 0.1
 - Test release
 - Test changelog
 - Test feature
+- Test fix
