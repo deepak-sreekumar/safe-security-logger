@@ -24,6 +24,7 @@ concurrency:
 
 jobs:
   prepare:
+    if: "!startsWith(github.event.head_commit.message, 'bump: version')"
     runs-on: ubuntu-latest
     outputs:
       wheel-distribution: ${{ steps.wheel-distribution.outputs.path }}
@@ -50,6 +51,7 @@ jobs:
 
   test:
     needs: prepare
+    if: "!startsWith(github.event.head_commit.message, 'bump: version')"
     strategy:
       matrix:
         python:
