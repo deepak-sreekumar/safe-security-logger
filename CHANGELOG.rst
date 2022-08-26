@@ -15,3 +15,4 @@ Version 0.1
 - Test bump
 - Test fix
 - Test release
+- Test feature1
