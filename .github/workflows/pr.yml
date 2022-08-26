@@ -85,7 +85,7 @@ jobs:
 
   bump-version:
     needs: test
-    if: "startsWith(github.event.head_commit.message, 'bump(trigger): release')"
+    if: "startsWith(github.event.head_commit.message, 'bump(trigger):')"
     runs-on: ubuntu-latest
     name: "Bump version and create changelog with commitizen"
     steps:
