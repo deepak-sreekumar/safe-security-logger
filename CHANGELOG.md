@@ -1,3 +1,13 @@
+## v0.7.0 (2022-08-26)
+
+### Feat
+
+- **logger**: test feature4
+
+### Fix
+
+- **logger**: test fix
+
 ## v0.6.0 (2022-08-26)
 
 ### Feat
