@@ -1,3 +1,13 @@
+## v0.9.0 (2022-09-29)
+
+### Feat
+
+- **logger**: test actor branch
+- **logger**: test actor fail
+- **logger**: test actor
+- **logger**: test gitcontext
+- **logger**: test manual trigger
+
 ## v0.8.0 (2022-08-26)
 
 ### Feat
