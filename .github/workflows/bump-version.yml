@@ -9,7 +9,7 @@ on:
 
 jobs:
   bump-version:
-    if: "github.actor=='deepak-sreekumar'"
+    if: "github.actor=='deepak'"
     runs-on: ubuntu-latest
     name: "Bump version and create changelog with commitizen"
     steps:
